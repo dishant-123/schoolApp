@@ -19,9 +19,9 @@ class DrawerCode extends StatelessWidget {
           ),
 
           ListTileCode(text: 'Home', iconType: Icons.home),
-          ListTileCode(text: 'Profile', iconType: Icons.account_circle, navigateScreen: 'profile',),
+          ListTileCode(text: 'Profile', iconType: Icons.account_circle, routeName: 'profile',),
           ListTileCode(text: 'Siblings', iconType: Icons.people),
-          ListTileCode(text: 'About School', iconType: Icons.school),
+          ListTileCode(text: 'About School', iconType: Icons.school, routeName: 'aboutUs',),
           ListTileCode(text: 'Notifications', iconType: Icons.notifications),
           ListTileCode(text: 'TechnicalSupport', iconType: Icons.call),
           ListTileCode(text: 'Emergency No.', iconType: Icons.call_to_action),

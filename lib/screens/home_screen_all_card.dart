@@ -21,7 +21,7 @@ class _HomeScreenAllCardsState extends State<HomeScreenAllCards> {
           ),
           Row(
             children: <Widget>[
-              HomeScreenCard(imageName: 'notice',text: 'Notice',),
+              HomeScreenCard(imageName: 'notice',text: 'Notice',routeName: 'notice',),
               HomeScreenCard(imageName: 'events',text: 'Events',),
               HomeScreenCard(imageName: 'marks',text: 'Marks',),
             ],
