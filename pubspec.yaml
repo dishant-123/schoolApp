@@ -13,6 +13,10 @@ dependencies:
 
   cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.8.1
+  calendar_widget: ^0.1.0
+  table_calendar: ^2.2.3
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -28,4 +32,7 @@ fonts:
    - family: Source Sans Pro
      fonts:
       - asset: fonts/SourceSansPro-Regular
+   - family: Baloo Tamma 2
+     fonts:
+       - asset: fonts/BalooTamma2-Regular.ttf
 

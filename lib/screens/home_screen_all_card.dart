@@ -14,8 +14,8 @@ class _HomeScreenAllCardsState extends State<HomeScreenAllCards> {
         children: <Widget>[
           Row(
             children: <Widget>[
-              HomeScreenCard(imageName: 'attendence',text: 'Attendence',),
-              HomeScreenCard(imageName: 'homework',text: 'HomeWork',),
+              HomeScreenCard(imageName: 'attendence',text: 'Attendence',routeName: 'attendence',),
+              HomeScreenCard(imageName: 'homework',text: 'HomeWork',routeName: 'homeWork',),
               HomeScreenCard(imageName: 'homework_activity',text: 'Homework \n Activity',),
             ],
           ),
