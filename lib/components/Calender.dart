@@ -2,21 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Calender extends StatefulWidget {
-  bool startDate;
-  Calender({@required this.startDate});
-  @override
+   final String startDate;
+   Calender({ Key key, this.startDate }) : super(key: key);
+
+   @override
   _CalenderState createState() => _CalenderState();
 }
 
 class _CalenderState extends State<Calender> {
-  CalendarController _controller;
 
+  CalendarController _controller;
   @override
   void initState() {
     super.initState();
+    print(widget.startDate);
     _controller = CalendarController();
-  }
 
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

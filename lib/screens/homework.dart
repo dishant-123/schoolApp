@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:schoolapp/components/Calender.dart';
 
 import 'package:schoolapp/components/homework_button.dart';
 import '../components/home_work_card.dart';
@@ -12,19 +13,6 @@ class HomeWork extends StatefulWidget {
 
 class _HomeWorkState extends State<HomeWork> {
   String startDate = 'StartDate', endDate = 'End Date';
-//  void changeStartDate(String date){
-//    setState(() {
-//      startDate = date;
-//    });
-//  }
-//  void changeEndDate(String date){
-//    setState(() {
-//      endDate = date;
-//    });
-//  }
-//  void openCalender(){
-////    Navigator.pushNamed(context, 'calender', arguments: Calender(startDate: true,));
-//  }
   @override
 
   Widget build(BuildContext context) {
@@ -66,8 +54,6 @@ class _HomeWorkState extends State<HomeWork> {
                   borderColor: Colors.black45,
                   color: Colors.white,
                   textColor: Colors.grey,
-//                  openCalender: openCalender,
-//                  selectedButton : 'start',
                 ),
                 SizedBox(
                   width: 7.0,
@@ -77,8 +63,6 @@ class _HomeWorkState extends State<HomeWork> {
                   borderColor: Colors.black45,
                   color: Colors.white,
                   textColor: Colors.grey,
-//                  openCalender: openCalender,
-//                  selectedButton : 'end',
                 ),
                 SizedBox(
                   width: 7.0,
@@ -88,7 +72,6 @@ class _HomeWorkState extends State<HomeWork> {
                   borderColor: Colors.white,
                   color: Colors.green,
                   textColor: Colors.white,
-//                  selectedButton : 'submit',
                 ),
                 SizedBox(
                   width: 6.0,
@@ -110,7 +93,12 @@ class _HomeWorkState extends State<HomeWork> {
                     text: KDummyContent,
                     date: '22 Mar 2020',
                   ),
-
+                  FlatButton(
+                    child: Text('Hello'),
+                    onPressed: (){
+                      Navigator.pushNamed(context, 'calender',arguments: Calender(startDate: '123',));
+                    },
+                  )
                 ],
               ),
             )

@@ -28,14 +28,14 @@ class _HomeScreenAllCardsState extends State<HomeScreenAllCards> {
           ),
           Row(
             children: <Widget>[
-              HomeScreenCard(imageName: 'circular',text: 'Circulars',),
+              HomeScreenCard(imageName: 'circular',text: 'Circulars',routeName: 'circulars',),
               HomeScreenCard(imageName: 'datesheet',text: 'Syllabus \nDateSheet',),
               HomeScreenCard(imageName: 'photoGallery',text: 'Photo Gallery', routeName: 'imageGallery',),
             ],
           ),
           Row(
             children: <Widget>[
-              HomeScreenCard(imageName: 'videoGallery',text: 'Video Gallery',),
+              HomeScreenCard(imageName: 'videoGallery',text: 'Video Gallery',routeName: 'videoGallery',),
               HomeScreenCard(imageName: 'indicipline',text: 'Indicipline',),
               HomeScreenCard(imageName: 'emergency',text: 'Emergency \n Message',),
             ],

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HomeWorkButton extends StatelessWidget {
-  String date;
-  Color borderColor, color, textColor;
+  final String date;
+  final Color borderColor, color, textColor;
   HomeWorkButton({@required this.date,this.color,this.borderColor,this.textColor});
   @override
   Widget build(BuildContext context) {
