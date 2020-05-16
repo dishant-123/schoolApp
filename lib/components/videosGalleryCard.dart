@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoGalleryCard extends StatefulWidget {
+  final String videoName, videoPath;
+  VideoGalleryCard({this.videoName,this.videoPath});
   @override
   _VideoGalleryCardState createState() => _VideoGalleryCardState();
 }
@@ -11,22 +13,22 @@ class VideoGalleryCard extends StatefulWidget {
 class _VideoGalleryCardState extends State<VideoGalleryCard> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
-
+  String videoName, videoPath;
   @override
   void initState() {
-    // Create and store the VideoPlayerController. The VideoPlayerController
-    // offers several different constructors to play videos from assets, files,
-    // or the internet.
     _controller = VideoPlayerController.network(
       'https://images.all-free-download.com/footage_preview/webm/dead_trees_146.webm',
     );
 
-    // Initialize the controller and store the Future for later use.
+
+      videoPath = widget.videoPath;
+      videoName = widget.videoName;
+//      _controller = VideoPlayerController.asset('assets/$filePath');
     _initializeVideoPlayerFuture = _controller.initialize();
 
     // Use the controller to loop the video.
     _controller.setLooping(true);
-
+    _controller.setVolume(100.0);
     super.initState();
   }
 
@@ -46,8 +48,6 @@ class _VideoGalleryCardState extends State<VideoGalleryCard> {
         future: _initializeVideoPlayerFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            // If the VideoPlayerController has finished initialization, use
-            // the data it provides to limit the aspect ratio of the video.
             return AspectRatio(
               aspectRatio: _controller.value.aspectRatio,
               // Use the VideoPlayer widget to display the video.
@@ -58,7 +58,7 @@ class _VideoGalleryCardState extends State<VideoGalleryCard> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                       Text(
-                        'Diwali Celebration',
+                        videoName,
                         style: TextStyle(
                             fontFamily: 'Arial, Helvetica, sans-serif',
                             fontSize: 20.0),

@@ -9,7 +9,7 @@ class Profile extends StatelessWidget {
         backgroundColor: Color(0xFFCC7001),
         title: Text(
           'Your Profile',
-          style: TextStyle(fontSize: 16.0),
+          style: TextStyle(fontSize: 20.0),
         ),
         actions: <Widget>[
           Padding(
@@ -34,14 +34,14 @@ class Profile extends StatelessWidget {
             backgroundImage: AssetImage('assets/profile.jpg'),
           ),
           Text(
-            'Ramshul Dua',
+            'Dishant Dua',
             style: TextStyle(
                 fontSize: 40.0,
                 color: Colors.black,
                 fontWeight: FontWeight.bold),
           ),
           Text(
-            'Maharaja Agarsen Public School',
+            'XYZ Public School',
             style: TextStyle(
                 color: Colors.black54,
                 fontFamily: 'Source Sans Pro',
@@ -54,11 +54,11 @@ class Profile extends StatelessWidget {
             child: Divider(color: Colors.white),
           ),
           ProfileCard(iconType: Icons.phone, text: '+91-8950618970'),
-          ProfileCard(iconType: Icons.email, text: 'raman@gmail.com'),
-          ProfileCard(iconType: Icons.location_city, text: '219/12, Meham, Rohtak, Haryana, 124112'),
-          ProfileCard(iconType: Icons.person_add, text: 'Mr. Om Parkash'),
-          ProfileCard(iconType: Icons.person_add, text: 'Mrs. Anjali Devi'),
-          ProfileCard(iconType: Icons.date_range,text: '01-05-2006',)
+          ProfileCard(iconType: Icons.email, text: 'dishantdua8956@gmail.com'),
+          ProfileCard(iconType: Icons.location_city, text: '216/6, Meham, Rohtak, Haryana, 124112'),
+          ProfileCard(iconType: Icons.person_add, text: 'Mr. Anil kumar'),
+          ProfileCard(iconType: Icons.person_add, text: 'Mrs. ChanderKanta'),
+          ProfileCard(iconType: Icons.date_range,text: '03-04-2000',)
         ],
       ),
     );

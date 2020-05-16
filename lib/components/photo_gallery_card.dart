@@ -21,7 +21,7 @@ class PhotoGalleryCard extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Image.asset(
-              'assets/$photoUrl.jpg',
+              'assets/$photoUrl',
               height: 125.0,
               width: 150.0,
             ),

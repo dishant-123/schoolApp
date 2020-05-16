@@ -12,9 +12,8 @@ class DrawerCode extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
 
-                image: AssetImage('assets/schoolIcon.jpg'),
+                image: AssetImage('assets/xyz.png'),
               ),
-              color: Color(0xFFE0E1CF),
             ),
           ),
 

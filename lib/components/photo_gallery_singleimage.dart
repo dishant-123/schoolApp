@@ -12,9 +12,9 @@ class PhotoGallerySingleImage extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Image.asset(
-            'assets/$imageUrl.jpg',
+            'assets/$imageUrl',
             height: 300.0,
-            width: 250.0,
+            width: double.infinity,
           ),
           SizedBox(
             height: 10.0,

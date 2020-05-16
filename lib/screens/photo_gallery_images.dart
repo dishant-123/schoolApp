@@ -10,7 +10,7 @@ class PhotoGalleryImages extends StatelessWidget {
         title: Center(
           child: Text(
             'Photos',
-            style: TextStyle(fontSize: 16.0),
+            style: TextStyle(fontSize: 20.0),
           ),
         ),
         actions: <Widget>[
@@ -33,10 +33,10 @@ class PhotoGalleryImages extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-                PhotoGallerySingleImage(imageUrl: 'circular', date: '12/11/2020',),
-                PhotoGallerySingleImage(imageUrl: 'circular', date: '12/11/2020',),
-                PhotoGallerySingleImage(imageUrl: 'circular', date: '12/11/2020',),
-                PhotoGallerySingleImage(imageUrl: 'circular', date: '12/11/2020',)
+                PhotoGallerySingleImage(imageUrl: 'diwali1.jfif', date: '12/11/2020',),
+                PhotoGallerySingleImage(imageUrl: 'diwali2.jfif', date: '12/11/2020',),
+                PhotoGallerySingleImage(imageUrl: 'diwali6.jfif', date: '12/11/2020',),
+                PhotoGallerySingleImage(imageUrl: 'diwali5..jfif', date: '12/11/2020',)
             ],
           ),
         ],

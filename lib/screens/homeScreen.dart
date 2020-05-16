@@ -16,8 +16,8 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Color(0xFFCC7001),
         title: Text(
-          'Maharaja Agarsen Public School' + '\n' '         Meham, Rohtak',
-          style: TextStyle(fontSize: 16.0),
+          'XYZ Public  School City, State, Country',
+          style: TextStyle(fontSize: 19.0),
         ),
       ),
       body: Container(

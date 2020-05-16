@@ -33,10 +33,9 @@ class AboutUs extends StatelessWidget {
             Container(
               height: 210.0,
               child: Card(
-                color: Color(0xFFCBD6DB),
                 child: Center(
                   child: Image.asset(
-                    'assets/schoolIcon.jpg',
+                    'assets/xyz.png',
                     width: 150.0,
                     height: 150.0,
                   ),
@@ -48,9 +47,9 @@ class AboutUs extends StatelessWidget {
             ),
             Center(
               child: Text(
-                'Maharaja Agarsen Public School, ' +
+                'XYZ Public School, ' +
                     '\n' +
-                    '              Meham, Rohtak',
+                    '              City, State',
                 style: TextStyle(
                     fontSize: 25.0,
                     color: Color(0xFFCC7000),
@@ -65,7 +64,7 @@ class AboutUs extends StatelessWidget {
                 children: <Widget>[
                   AboutUsCard(
                     singleKey: 'Contact No :',
-                    singleValue: '9991857402',
+                    singleValue: '999185740',
                   ),
                   AboutUsCard(
                     singleKey: 'Email :',
@@ -73,19 +72,19 @@ class AboutUs extends StatelessWidget {
                   ),
                   AboutUsCard(
                     singleKey: 'Board: ',
-                    singleValue: 'School No.3844',
+                    singleValue: 'School No.0000',
                   ),
                   AboutUsCard(
                     singleKey: 'Board: ',
-                    singleValue: 'School No.3844',
+                    singleValue: 'School No.1111',
                   ),
                   AboutUsCard(
                     singleKey: 'Adress: ',
-                    singleValue: 'Meham(Rohtak)- 124112',
+                    singleValue: 'City(State)- 124112',
                   ),
                   AboutUsCard(
                     singleKey: 'Phone no.: ',
-                    singleValue: '8222011603',
+                    singleValue: '888888888',
                   ),
                 ],
               ),

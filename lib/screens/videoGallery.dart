@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:schoolapp/components/videosGalleryCard.dart';
 
+
 class VideoGallery extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,13 +32,14 @@ class VideoGallery extends StatelessWidget {
           ],
         ),
         body: ListView(
+          padding: EdgeInsets.all(20.0),
           children: <Widget>[
             SizedBox(
               height: 10.0,
             ),
-            VideoGalleryCard(),
-            VideoGalleryCard(),
-            VideoGalleryCard(),
+            VideoGalleryCard(videoName: 'Diwali Celebration',videoPath: 'abcd.mp4',),
+            VideoGalleryCard(videoName: 'Diwali Celebration',videoPath: 'abcd.mp4',),
+//            VideoGalleryCard(),
           ],
         ));
   }

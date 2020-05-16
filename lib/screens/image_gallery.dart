@@ -11,7 +11,7 @@ class ImageGallery extends StatelessWidget {
         title: Center(
           child: Text(
             'Image Gallery',
-            style: TextStyle(fontSize: 16.0),
+            style: TextStyle(fontSize: 20.0),
           ),
         ),
         actions: <Widget>[
@@ -31,10 +31,10 @@ class ImageGallery extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-            PhotoGalleryCard(photosTitle: 'Holiday',noOfPhotos: 12, photoUrl: 'circular',),
-            PhotoGalleryCard(photosTitle: 'Diwali Celebration',noOfPhotos: 11, photoUrl: 'circular',),
-            PhotoGalleryCard(photosTitle: 'School Activities',noOfPhotos: 09, photoUrl: 'circular',),
-            PhotoGalleryCard(photosTitle: 'Robotic Class',noOfPhotos: 4, photoUrl: 'circular',),
+            PhotoGalleryCard(photosTitle: 'Holiday',noOfPhotos: 12, photoUrl: 'holidays1.jfif',),
+            PhotoGalleryCard(photosTitle: 'Diwali Celebration',noOfPhotos: 11, photoUrl: 'diwali1.jfif',),
+            PhotoGalleryCard(photosTitle: 'School Activities',noOfPhotos: 09, photoUrl: 'activities.jfif',),
+            PhotoGalleryCard(photosTitle: 'Robotic Class',noOfPhotos: 4, photoUrl: 'robotics1.jfif',),
         ],
       ),
     );

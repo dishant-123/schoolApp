@@ -11,7 +11,7 @@ class Notice extends StatelessWidget {
         title: Center(
           child: Text(
             'Notice',
-            style: TextStyle(fontSize: 16.0),
+            style: TextStyle(fontSize: 20.0),
           ),
         ),
         actions: <Widget>[
